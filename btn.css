@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.text-page{
+    width: min(90vw, 700px);
+    padding: 40px 28px;
+    text-align: center;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px #0000000f;
+}
+.text-page a{
+    color: #1c1ce4;
+    font-weight: bold;
+}
