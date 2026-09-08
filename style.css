@@ -92,5 +92,21 @@ body {
 }
 
 .info-panel p:last-child {
-    margin-bottom: 0;
+    margin-bottom: 24px;
+}
+
+.more-button {
+    display: block;
+    padding: 12px 18px;
+    border-radius: 8px;
+    background: #1c1ce4;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 3px 5px 5px #0000002f;
+}
+
+.more-button:hover {
+    background: #1414b5;
 }
