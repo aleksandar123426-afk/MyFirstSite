@@ -8,8 +8,8 @@ body {
     display: grid;
     place-items: center;
     padding: 24px;
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #fff;
     color: #222;
 }
 

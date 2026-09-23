@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>C-family language cards</title>
+	<link rel="stylesheet" href="Cards.css">
+	<script src="Cards.js" defer></script>
+</head>
+<body>
+	<div class="cards-page">
+		<nav class="cards-nav" aria-label="Main navigation">
+			<a class="cards-nav__brand" href="index.html">C Family</a>
+			<a href="index.html">Back home</a>
+		</nav>
+
+		<header class="cards-heading">
+			<p class="eyebrow">Language library</p>
+			<h1>Find your next C-family language</h1>
+			<p>Two powerful paths from the same structured roots. Pick a card to learn what makes each one different.</p>
+		</header>
+
+		<main class="language-grid">
+			<article class="language-card language-card--cpp">
+				<div class="language-card__topline">
+					<span class="language-card__mark">++</span>
+					<span class="language-card__tag">Systems &amp; games</span>
+				</div>
+				<h2>C++</h2>
+				<p class="language-card__summary">High-performance software with fine control over memory, hardware, and speed.</p>
+				<ul class="language-card__facts">
+					<li>Compiled and highly performant</li>
+					<li>Popular for engines and embedded systems</li>
+					<li>Supports object-oriented and generic styles</li>
+				</ul>
+				<button class="language-card__button" type="button" aria-expanded="false" aria-controls="cpp-details">Show details <span aria-hidden="true">+</span></button>
+				<p id="cpp-details" class="language-card__details" hidden>Choose C++ when low-level control and maximum performance are central to the project.</p>
+			</article>
+
+			<article class="language-card language-card--csharp">
+				<div class="language-card__topline">
+					<span class="language-card__mark">#</span>
+					<span class="language-card__tag">Apps &amp; services</span>
+				</div>
+				<h2>C#</h2>
+				<p class="language-card__summary">A modern, expressive language for polished applications, games, and connected services.</p>
+				<ul class="language-card__facts">
+					<li>Runs on the cross-platform .NET runtime</li>
+					<li>Strong tooling and automatic memory management</li>
+					<li>Used with Unity, web, desktop, and cloud apps</li>
+				</ul>
+				<button class="language-card__button" type="button" aria-expanded="false" aria-controls="csharp-details">Show details <span aria-hidden="true">+</span></button>
+				<p id="csharp-details" class="language-card__details" hidden>Choose C# when you want a productive language with a broad ecosystem and excellent developer tools.</p>
+			</article>
+		</main>
+	</div>
+</body>
+</html>

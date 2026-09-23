@@ -10,8 +10,8 @@ html, body {
     margin: 0;
     width: 100%;
     min-height: 100%;
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
+    font-family: Georgia, 'Times New Roman', serif;
+    background: #fff;
     scroll-behavior: smooth;
 }
 
@@ -109,4 +109,110 @@ body {
 
 .more-button:hover {
     background: #1414b5;
+}
+
+.top-sections {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas: "choose relevant";
+    align-items: start;
+    gap: 36px;
+    width: min(90vw, 920px);
+    margin: 60px auto 0;
+}
+
+.top-sections .info-panel {
+    grid-area: relevant;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.top-sections .info-panel h2 {
+    margin: 0 0 12px;
+    font-size: clamp(1.8rem, 3vw, 2.7rem);
+    line-height: 1.1;
+}
+
+.cards-callout {
+    grid-area: choose;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+    width: auto;
+    margin: 0;
+    padding-top: 6px;
+    text-align: left;
+}
+
+.cards-callout > div {
+    flex: 1;
+    width: 100%;
+    max-width: 680px;
+    margin: 0;
+}
+
+.section-label {
+    margin: 0 0 8px;
+    font-size: 0.82rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #666;
+    font-weight: 700;
+}
+
+.cards-callout h2 {
+    margin: 0 0 12px;
+    font-size: clamp(1.8rem, 3vw, 2.7rem);
+    line-height: 1.1;
+    color: #1d1d1d;
+}
+
+.cards-callout p {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.cards-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    border-radius: 999px;
+    background: #1c1ce4;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    white-space: nowrap;
+    box-shadow: 0 8px 18px rgba(28, 28, 228, 0.22);
+    margin: 0;
+}
+
+.cards-button:hover {
+    background: #1414b5;
+}
+
+@media (max-width: 560px) {
+    .top-sections {
+        grid-template-columns: 1fr;
+        grid-template-areas: "choose" "relevant";
+        width: 90vw;
+        margin-top: 48px;
+    }
+
+    .top-sections .info-panel {
+        width: 100%;
+    }
+
+    .cards-callout {
+        width: auto;
+        margin: 0;
+    }
 }
